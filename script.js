@@ -1,1 +1,31 @@
-
+    body {
+        margin: 0;
+        overflow: hidden;
+        background-color: #000;
+        color: white;
+    
+        user-select: none;
+    }
+    canvas {
+        display: block;
+    }
+    .panel {
+        background-color: #171b26;
+        border: 1px solid #2d3748;
+        border-radius: 0.75rem;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    }
+    .interactive-ui {
+        pointer-events: auto;
+    }
+    #uiLayer {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+    }
+    .hidden {
+        display: none !important;
+    }
